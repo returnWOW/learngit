@@ -32,6 +32,7 @@ git checkout -b dev
 git branch  #查看分支情况
 git merge dev #合并指定分支到当前分支。Fast-forward是一种合并方式（快进）
 git branch -d dev #删除分支
+
 #小结：
 Git鼓励大量使用分支：
 查看分支：git branch
@@ -41,6 +42,10 @@ Git鼓励大量使用分支：
 合并某分支到当前分支：git merge <name>
 删除分支：git branch -d <name>
 
-#解决冲突
+#解决冲突 两个分支都修改提交，然后合并出现问题
 Creating a new branch is quick AND simple.
+git log --graph --pretty=oneline --abberev-commit
+小结
+当Git无法自动合并分支时，就必须首先解决冲突。解决冲突后，再提交，合并完成。
+用git log --graph命令可以看到分支合并图。
 
