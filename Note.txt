@@ -1,1 +1,3 @@
 Creating a new branch is quick & simple.
+
+冲突对于新文件貌似自动解决
