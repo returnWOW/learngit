@@ -16,3 +16,7 @@ git stash apply
 git stash apply stash@{0}
 git stash drop
 git stash pop #自动恢复和删除
+
+#Feature分支
+丢弃一个没有合并的分支
+git branch -D xxx
