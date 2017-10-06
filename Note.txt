@@ -62,3 +62,17 @@ git tag -a <tagname> -m "blablabla..."可以指定标签信息；
 git tag -s <tagname> -m "blablabla..."可以用PGP签名标签；
 命令git tag可以查看所有标签。
 
+#操作标签
+git tag -d v0.1
+git push origin <tagname>  #推送标签
+git push origin --tag  #推送所有未推送的标签
+git push origin :refs/tags/v0.9  #删除远程标签
+--小结
+命令git push origin <tagname>可以推送一个本地标签；
+命令git push origin --tags可以推送全部未推送过的本地标签；
+命令git tag -d <tagname>可以删除一个本地标签；
+命令git push origin :refs/tags/<tagname>可以删除一个远程标签。 
+
+#上传本地库
+git remote add gitee git@gitee.com:name/learngit.git #多个远程库自定义命名
+git push gitee master #自定义push的仓库
