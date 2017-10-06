@@ -293,3 +293,9 @@ warning: You appear to have cloned an empty repository.
 要方便管理公钥，用Gitosis；
 
 要像SVN那样变态地控制权限，用Gitolite。
+
+#删除文件或者目录
+git rm -r -n --cached somefile or path  #查看准备删除的文件，从cache.把-n去掉就可以删除。并且本地文件是没有删除的。
+git commit -m "rm somefile"
+git push github master #提交即可
+
