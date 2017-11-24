@@ -1,3 +1,6 @@
+#查看教程来至廖雪峰个人网站，
+#后续查看numpy的时候也发现这个网站：https://learngitbranching.js.org/
+
 Creating a new branch is quick & simple.
 
 冲突对于新文件貌似自动解决
